@@ -7,6 +7,7 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <!-- <link rel="stylesheet" type="" href="reposive.css" /> -->
 
@@ -20,7 +21,6 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-
   <!-- font-icon-cdn -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
@@ -33,9 +33,6 @@
     integrity="sha512-cp9JSDyi0CDCvBfFKYLWXevb3r8hRv5JxcxLkUq/LEtAmOg7X0yzR3p0x/g+S3aWcZw18mhxsCXyelKWmXgzzg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Tailwind CSS -->
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
   <title>Auctus Group</title>
 </head>
 
@@ -45,36 +42,39 @@
   <header id="mainHeader">
     <nav class="navbar navbar-expand-lg px-4 py-3">
       <div class="container-fluid">
-
         <!-- Logo -->
         <a class="navbar-brand fw-bold text-warning fs-3" href="#">
-          AUCTUS
+          <img src="images/main-logo.png" />
         </a>
 
         <!-- Mobile Button -->
-        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <button class="navbar-toggler border-0 shadow-none" type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent"
+    aria-expanded="false">
+
+    <span class="navbar-toggler-icon"></span>
+</button>
 
         <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+          <!-- <button type="button" class="mobile_nav_close" aria-label="Close menu">
+            <span></span>
+          </button> -->
+
           <!-- Center Menu -->
           <ul class="navbar-nav mx-auto">
             <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Founders</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Our Company</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about" data-nav-link="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#founder" data-nav-link="#founder">Founders</a></li>
+            <li class="nav-item"><a class="nav-link" href="#company">Our Company</a></li>
           </ul>
-
           <!-- Button -->
-          <button class="header_button">
-            Contact Us
-          </button>
-
+          <buttaon class="header_button">
+            <a href="#contact" data-nav-link="#contact">Contact Us</a>
+          </buttaon>
         </div>
-
       </div>
     </nav>
   </header>
@@ -86,121 +86,59 @@
         <div class="main_inne_part">
           <swiper-container class="mySwiper">
             <swiper-slide>
-              <img src="images/banner.jpg" class="banner_images" alt="Image 1">
+              <img src="images/bann-b.png" class="banner_images" alt="Image 1">
               <div class="banner_overlay"></div>
               <div class="inner_text">
-                <h1>Lorem Ipsum is simply dummy text of the printing</h1>
-
+                <h1>Building the Future Through Innovation, Technology & Trust</h1>
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
+                  Auctus Group is a diversified global business house delivering excellence across logistics,
+                  infrastructure, interior design, technology, agriculture, healthcare, fintech, and industrial
+                  solutions. We create sustainable businesses that shape industries and improve lives.
                 </p>
 
                 <div class="banner_button">
-                  <a href="#">
+                  <!-- <a href="#">
                     View All Project
                     <img class="svg_icon" src="images/arrow.svg" alt="">
-                  </a>
+                  </a> -->
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <img src="images/banner.jpg" class="banner_images" alt="Image 1">
+              <img src="images/bann-c.png" class="banner_images" alt="Image 2">
               <div class="banner_overlay"></div>
               <div class="inner_text">
-                <h1>Lorem Ipsum is simply dummy text of the printing</h1>
+                <h1>Where Technology Powers Every Possibility</h1>
 
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
+                  Technology is more than a tool—it's the foundation of everything we create. From intelligent logistics
+                  and digital transformation to smart business solutions, Auctus Group empowers industries to achieve
+                  greater efficiency, growth, and global competitiveness.
                 </p>
-
-                <div class="banner_button">
-                  <a href="#">
-                    View All Project
-                    <img class="svg_icon" src="images/arrow.svg" alt="">
-                  </a>
-                </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <img src="images/banner.jpg" class="banner_images" alt="Image 1">
+              <img src="images/bann-a.png" class="banner_images" alt="Image 1">
               <div class="banner_overlay"></div>
               <div class="inner_text">
-                <h1>Lorem Ipsum is simply dummy text of the printing</h1>
+                <h1>A Diversified Business Group Creating Global Impact</h1>
 
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
+                  At Auctus Group, we unite technology, infrastructure, logistics, healthcare, fintech, agriculture, and
+                  design under one vision. With innovation at our core, we deliver sustainable business solutions that
+                  create value for industries, communities, and future generations.
                 </p>
 
-                <div class="banner_button">
-                  <a href="#">
-                    View All Project
-                    <img class="svg_icon" src="images/arrow.svg" alt="">
-                  </a>
-                </div>
               </div>
             </swiper-slide>
-
           </swiper-container>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- banner_bottom -->
-  <section class="partner_section">
-    <div class="swiper partner_swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="images_box">
-            <img src="images/logo.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="images_box">
-            <img src="images/Asset-28.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="images_box">
-            <img src="images/gf-1.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="images_box">
-            <img src="images/Asset-28.png" alt="">
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="images_box">
-            <img src="images/cropped-Logo-01-1-1.png" alt="">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="images_box">
-            <img src="images/Asset-28.png" alt="">
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="images_box">
-            <img src="images/Evora-Logo_original_RGB.png" alt="">
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
   <!-- about_section -->
-  <section class="about_section">
+  <section class="about_section" id="about">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
@@ -211,28 +149,16 @@
                 About Us
               </h6>
             </div>
-            <h2>We’re proud to partner with Best-in-class Company</h2>
+            <h2>Welcome to Auctus Group</h2>
             <div class="left_part">
               <img src="images/Mask group.png" />
 
               <div class="about_info">
                 <div class="info_one">
-                  <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="lucide lucide-telescope-icon lucide-telescope">
-                      <path
-                        d="m10.065 12.493-6.18 1.318a.934.934 0 0 1-1.108-.702l-.537-2.15a1.07 1.07 0 0 1 .691-1.265l13.504-4.44" />
-                      <path d="m13.56 11.747 4.332-.924" />
-                      <path d="m16 21-3.105-6.21" />
-                      <path
-                        d="M16.485 5.94a2 2 0 0 1 1.455-2.425l1.09-.272a1 1 0 0 1 1.212.727l1.515 6.06a1 1 0 0 1-.727 1.213l-1.09.272a2 2 0 0 1-2.425-1.455z" />
-                      <path d="m6.158 8.633 1.114 4.456" />
-                      <path d="m8 21 3.105-6.21" />
-                      <circle cx="12" cy="13" r="2" />
-                    </svg>Our vision</h3>
+                  <h3>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-minus-icon lucide-shield-minus"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M9 12h6"/></svg>Our Mission</h3>
                   <p>
-                    It is a long established fact that a reader will be distracted
-                    by the readable content of a page when looking at its layout.
+                    A team of experienced professionals from varied backgrounds and a singular vision!
                   </p>
                 </div>
                 <div class="info_two">
@@ -250,32 +176,16 @@
                       <circle cx="12" cy="13" r="2" />
                     </svg>Our vision</h3>
                   <p>
-                    It is a long established fact that a reader will be distracted
-                    by the readable content of a page when looking at its layout.
+                    A vision of changing the world for the better by creating and using the best of technology!
                   </p>
                 </div>
                 <div class="info_three">
-                  <h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="lucide lucide-telescope-icon lucide-telescope">
-                      <path
-                        d="m10.065 12.493-6.18 1.318a.934.934 0 0 1-1.108-.702l-.537-2.15a1.07 1.07 0 0 1 .691-1.265l13.504-4.44" />
-                      <path d="m13.56 11.747 4.332-.924" />
-                      <path d="m16 21-3.105-6.21" />
-                      <path
-                        d="M16.485 5.94a2 2 0 0 1 1.455-2.425l1.09-.272a1 1 0 0 1 1.212.727l1.515 6.06a1 1 0 0 1-.727 1.213l-1.09.272a2 2 0 0 1-2.425-1.455z" />
-                      <path d="m6.158 8.633 1.114 4.456" />
-                      <path d="m8 21 3.105-6.21" />
-                      <circle cx="12" cy="13" r="2" />
-                    </svg>Our vision</h3>
+                  <h3><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-candlestick-icon lucide-chart-candlestick"><path d="M9 5v4"/><rect width="4" height="6" x="7" y="9" rx="1"/><path d="M9 15v2"/><path d="M17 3v2"/><rect width="4" height="8" x="15" y="5" rx="1"/><path d="M17 13v3"/><path d="M3 3v16a2 2 0 0 0 2 2h16"/></svg>Our Values</h3>
                   <p>
-                    It is a long established fact that a reader will be distracted
-                    by the readable content of a page when looking at its layout.
+                    Our values of integrity, innovation, speed and excellence drive us to achieve more everyday!
                   </p>
                 </div>
               </div>
-
-
             </div>
             <div class="about_info">
             </div>
@@ -286,19 +196,19 @@
             <img class="images_one" src="images/blog6.jpg" />
             <img class="images_two" src="images/Mask group (1).png" />
           </div>
-          <div class="about_button">
+          <!-- <div class="about_button">
             <a href="#">
               More about us
               <img class="svg_icon" src="images/right-arrow 8.png" alt="">
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </section>
 
   <!-- foundersection -->
-  <section class="founder_section">
+  <section class="founder_section" id="founder">
     <div class="founder_part">
       <div class="container-fluid p-0">
         <div class="row">
@@ -316,74 +226,113 @@
         </div>
         <div class="row">
           <div class="founder_member">
-            <swiper-container class="mySwiper" effect="coverflow" grab-cursor="true" centered-slides="true"
-              slides-per-view="5" space-between="20" pagination="true" coverflow-effect-rotate="0"
-              coverflow-effect-stretch="0" coverflow-effect-depth="150" coverflow-effect-modifier="1"
-              coverflow-effect-scale="0.9" coverflow-effect-slide-shadows="false" autoplay="true" auto-play-delay="2000"
-              auto-play-disable-on-interaction="false">
+            <swiper-container class="mySwiper founder_swiper" effect="coverflow" grab-cursor="true"
+              centered-slides="true" slides-per-view="5" space-between="20" pagination="true"
+              coverflow-effect-rotate="0" coverflow-effect-stretch="0" coverflow-effect-depth="150"
+              coverflow-effect-modifier="1" coverflow-effect-scale="0.9" coverflow-effect-slide-shadows="false"
+              autoplay="true" auto-play-delay="5000" auto-play-disable-on-interaction="false ">
+
+              <swiper-slide>
+                <img src="images/bishnu2.jpeg.jpg" />
+                <div class="content_part">
+                  <img src="images/bishnu2.jpeg.jpg" />
+                  <div class="innter_content_part">
+                    <h4>Bishnu Kumar Bajaj </h4>
+                    <p>Investor & Advisor Auctus Group</p>
+                  </div>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <img src="images/sanjay.jpg" />
+                <div class="content_part">
+                  <img src="images/sanjay.jpg" />
+                  <div class="innter_content_part">
+                    <h4>Sanjay Kumar Kundaliya</h4>
+                    <p>CMD, Jayesh Logistics Ltd </p>
+                  </div>
+                </div>
+              </swiper-slide>
+
               <swiper-slide>
                 <img src="images/mithun.jpeg" />
                 <div class="content_part">
-                  <h4>Mithun Chakraborty</h4>
-                  <p>CEO, Glocal Farms Pvt Ltd</p>
+                  <img src="images/mithun.jpeg" />
+                  <div class="innter_content_part">
+                    <h4>Mithun Chakraborty</h4>
+                    <p>Founder & Director, Glocal Farms Pvt Ltd</p>
+                  </div>
                 </div>
               </swiper-slide>
               <swiper-slide>
-                <img src="https://swiperjs.com/demos/images/abstract-2.jpg" />
+                <img src="images/rishi_hres.jpg" />
                 <div class="content_part">
-                  <h4>Mithun Chakraborty</h4>
-                  <p>CEO, Glocal Farms Pvt Ltd</p>
+                  <img src="images/rishi_hres.jpg" />
+                  <div class="innter_content_part">
+                    <h4>Rishi Maheshwari</h4>
+                    <p>Exec. Director, Privin Projects Private Limited </p>
+                  </div>
                 </div>
               </swiper-slide>
+
               <swiper-slide>
-                <img src="https://swiperjs.com/demos/images/abstract-3.jpg" />
+                <img src="images/lady.jpeg" />
                 <div class="content_part">
-                  <h4>Mithun Chakraborty</h4>
-                  <p>CEO, Glocal Farms Pvt Ltd</p>
+                  <img src="images/lady.jpeg" />
+                  <div class="innter_content_part">
+                    <h4>Rashmi Bajaj </h4>
+                    <p>Exec. Director, Privin Projects Private Limited</p>
+                  </div>
                 </div>
               </swiper-slide>
+
+
+
               <swiper-slide>
-                <img src="https://swiperjs.com/demos/images/abstract-4.jpg" />
+                <img src="images/lady-2.jpeg" />
                 <div class="content_part">
-                  <h4>Mithun Chakraborty</h4>
-                  <p>CEO, Glocal Farms Pvt Ltd</p>
+                  <img src="images/lady-2.jpeg" />
+                  <div class="innter_content_part">
+                    <h4>Vineeta Sodhani </h4>
+                    <p>Non-Exec. Director, Privin Projects Private Limited </p>
+                  </div>
                 </div>
               </swiper-slide>
+
+
               <swiper-slide>
-                <img src="https://swiperjs.com/demos/images/abstract-5.jpg" />
+                <img src="images/moshin2.jpeg" />
                 <div class="content_part">
-                  <h4>Mithun Chakraborty</h4>
-                  <p>CEO, Glocal Farms Pvt Ltd</p>
+                  <img src="images/moshin2.jpeg" />
+                  <div class="innter_content_part">
+                    <h4>Mohasin Dhali </h4>
+                    <p>Founder & Director, Glocal Farms Pvt Ltd</p>
+                  </div>
                 </div>
               </swiper-slide>
+
+
               <swiper-slide>
-                <img src="https://swiperjs.com/demos/images/abstract-6.jpg" />
+                <img src="images/utkash.jpeg" />
                 <div class="content_part">
-                  <h4>Mithun Chakraborty</h4>
-                  <p>CEO, Glocal Farms Pvt Ltd</p>
+                  <img src="images/utkash.jpeg" />
+                  <div class="innter_content_part">
+                    <h4>Utkarsh Gutgutia </h4>
+                    <p>Founder, Glocal Farms Pvt Ltd</p>
+                  </div>
                 </div>
               </swiper-slide>
-              <swiper-slide>
-                <img src="https://swiperjs.com/demos/images/abstract-7.jpg" />
+
+              <!-- <swiper-slide>
+                <img src="images/images-2.avif" />
                 <div class="content_part">
-                  <h4>Mithun Chakraborty</h4>
-                  <p>CEO, Glocal Farms Pvt Ltd</p>
+                  <img src="images/images-2.avif" />
+                  <div class="innter_content_part">
+                    <h4>Mithun Chakraborty</h4>
+                    <p>CEO, Glocal Farms Pvt Ltd</p>
+                  </div>
                 </div>
-              </swiper-slide>
-              <swiper-slide>
-                <img src="https://swiperjs.com/demos/images/abstract-8.jpg" />
-                <div class="content_part">
-                  <h4>Mithun Chakraborty</h4>
-                  <p>CEO, Glocal Farms Pvt Ltd</p>
-                </div>
-              </swiper-slide>
-              <swiper-slide>
-                <img src="https://swiperjs.com/demos/images/abstract-9.jpg" />
-                <div class="content_part">
-                  <h4>Mithun Chakraborty</h4>
-                  <p>CEO, Glocal Farms Pvt Ltd</p>
-                </div>
-              </swiper-slide>
+              </swiper-slide> -->
             </swiper-container>
           </div>
         </div>
@@ -392,9 +341,9 @@
   </section>
 
   <!-- groth_part -->
-  <section class="milestone-section">
+
+  <!-- <section class="milestone-section">
     <div class="container-fluid p-0">
-      <!-- TAG -->
       <div class="row">
         <div class="col-md-12">
           <div class="top_heading">
@@ -402,10 +351,9 @@
               <div class="top_sec_part">
                 <h6>
                   <div class="dott"></div>
-                  About Us
+                  Our Growth
                 </h6>
               </div>
-              <!-- TITLE -->
             </div>
             <div class="col-md-9">
               <h2 class="section-title fade-up">
@@ -415,9 +363,9 @@
           </div>
         </div>
       </div>
-      <!-- BARS -->
+      
       <div class="milestone-wrapper">
-        <!-- BAR -->
+   
         <div class="milestone-bar fade-up" style="height:200px">
           <div class="hover-card">
             <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1200&auto=format&fit=crop">
@@ -430,47 +378,35 @@
               </p>
             </div>
           </div>
-
           <div class="bar-top">
             <h4>Corporate Sustainability</h4>
             <h3 class="counter" data-target="2000">0</h3>
           </div>
-
         </div>
-
-        <!-- BAR -->
         <div class="milestone-bar fade-up" style="height:240px">
           <div class="bar-top">
             <h4>Corporate Sustainability</h4>
             <h3 class="counter" data-target="2016">0</h3>
           </div>
         </div>
-
-        <!-- BAR -->
         <div class="milestone-bar fade-up" style="height:280px">
           <div class="bar-top">
             <h4>Privin Project Pvt Ltd</h4>
             <h3 class="counter" data-target="2018">0</h3>
           </div>
         </div>
-
-        <!-- BAR -->
         <div class="milestone-bar fade-up" style="height:320px">
           <div class="bar-top">
             <h4>Corporate Sustainability</h4>
             <h3 class="counter" data-target="2020">0</h3>
           </div>
         </div>
-
-        <!-- BAR -->
         <div class="milestone-bar fade-up" style="height:360px">
           <div class="bar-top">
             <h4>Corporate Sustainability</h4>
             <h3 class="counter" data-target="2022">0</h3>
           </div>
         </div>
-
-        <!-- BAR -->
         <div class="milestone-bar fade-up" style="height:400px">
           <div class="bar-top">
             <h4>Corporate Sustainability</h4>
@@ -478,8 +414,6 @@
           </div>
         </div>
 
-
-        <!-- BAR -->
         <div class="milestone-bar fade-up" style="height:440px">
           <div class="bar-top">
             <h4>Corporate Sustainability</h4>
@@ -487,30 +421,260 @@
           </div>
         </div>
 
-
-
-        <!-- BAR -->
         <div class="milestone-bar fade-up" style="height:520px">
           <div class="bar-top">
             <h4>Corporate Sustainability</h4>
             <h3 class="counter" data-target="2026">0</h3>
           </div>
         </div>
-
-
       </div>
-
     </div>
-
-    <!-- BACKGROUND TEXT -->
     <div class="bg-text">
       AUCTUS
     </div>
+  </section> -->
 
+  <!-- new growth part -->
+ <section class="story-section">
+    <div class="container">
+      <div class="row">
+        <div class="top_heading">
+          <div class="col-md-6">
+            <div class="top_sec_part">
+              <h6>
+                <div class="dott"></div>
+                Our Growth
+              </h6>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="right_heading">
+              <h2>There Are Behind The Auctus Group </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Swiper Container -->
+      <div class="swiper storySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slides 2008----EEEEEEE -->
+          <div class="swiper-slide" data-year="2008">
+            <div class="slide-grid">
+              <div class="col-left animated-element">
+                <h2 class="slide-title">RHMB Private Limited</h2>
+                <p class="slide-text">RHMB Private Limited trades industrial metals and premium apparel with a focus on
+                  quality and reliability.</p>
+              </div>
+              <div class="col-center animated-element">
+                <div class="image-wrapper"><img src="images/steel-hero-premium-v1.avif" alt="2008"></div>
+              </div>
+              <div class="col-right animated-element">
+                <p class="slide-text font-light">RHMB Private Limited is a diversified trading company engaged in the
+                  supply of industrial metals and apparel across India. The company specializes in trading TMT bars,
+                  metal products, and baby wear while delivering quality products through a reliable sourcing and
+                  distribution network. With a strong focus on efficiency, customer satisfaction, and long-term business
+                  relationships, RHMB continues to provide dependable trading solutions across multiple industry
+                  segments.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2011----AAA -->
+          <div class="swiper-slide" data-year="2011">
+            <div class="slide-grid">
+              <div class="col-left animated-element">
+                <h2 class="slide-title">Jayesh Logistics Ltd.</h2>
+                <p class="slide-text">Jayesh Logistics Ltd. delivers integrated B2B logistics and supply chain solutions
+                  across India and the India–Nepal trade corridor.
+                </p>
+              </div>
+              <div class="col-center animated-element">
+                <div class="image-wrapper">
+                  <img src="images/about_us_page_service_image.webp" alt="Year 2011">
+                </div>
+              </div>
+              <div class="col-right animated-element">
+                <p class="slide-text font-light">Jayesh Logistics Ltd. is a publicly listed logistics company delivering
+                  large-scale B2B transportation solutions across India with a strong specialization in the India–Nepal
+                  trade corridor. Serving the iron, steel, cement, and allied industries, the company provides reliable
+                  road freight, rail freight, port handling, and customs clearance services while maintaining the
+                  highest standards through ISO 9001:2015 and ISO 14001:2015 certifications.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2017---CCCCCC -->
+          <div class="swiper-slide" data-year="2017">
+            <div class="slide-grid">
+              <div class="col-left animated-element">
+                <h2 class="slide-title">Glocal Farms Private Limited</h2>
+                <p class="slide-text">Glocal Farms Private Limited delivers infrastructure development and agricultural
+                  solutions across West Bengal. </p>
+              </div>
+              <div class="col-center animated-element">
+                <div class="image-wrapper">
+                  <img src="images/glocal-1.jpg" alt="2017">
+                </div>
+              </div>
+              <div class="col-right animated-element">
+                <p class="slide-text font-light">Glocal Farms Private Limited is an infrastructure and agri-business
+                  company delivering sustainable development solutions across West Bengal. Specializing in irrigation
+                  systems, roads, bridges, tube wells, and water harvesting projects, the company supports rural and
+                  public infrastructure through reliable engineering and project execution.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2019---BBBBBB -->
+          <div class="swiper-slide" data-year="2019">
+            <div class="slide-grid">
+              <div class="col-left animated-element">
+                <h2 class="slide-title">Privin Project's Pvt Ltd.</h2>
+                <p class="slide-text">Privin Projects Private Limited delivers civil construction and interior design
+                  solutions for modern infrastructure projects.</p>
+              </div>
+              <div class="col-center animated-element">
+                <div class="image-wrapper">
+                  <img src="images/intro.jpg" alt="Year 2019">
+                </div>
+              </div>
+              <div class="col-right animated-element">
+                <p class="slide-text font-light">Privin Projects Private Limited is a leading construction and
+                  infrastructure company delivering high-quality civil construction and interior design solutions across
+                  India. With expertise in building development, hospital infrastructure, and public utility projects,
+                  the company is committed to creating sustainable, functional, and future-ready spaces through
+                  innovation, quality, and engineering excellence.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2025----DDDD -->
+          <div class="swiper-slide" data-year="2025">
+            <div class="slide-grid">
+              <div class="col-left animated-element">
+                <h2 class="slide-title">Ninetech Digital Services Private Limited</h2>
+                <p class="slide-text"> Ninetech Digital Services Private Limited delivers fintech (CMS, DMT, AEPS, bill
+                  payments) and digital technology solutions across India. </p>
+              </div>
+              <div class="col-center animated-element">
+                <div class="image-wrapper"><img src="images/nminepay.webp" alt="2025"></div>
+              </div>
+              <div class="col-right animated-element">
+                <p class="slide-text font-light">Ninetech Digital Services Private Limited is a fintech and technology
+                  company delivering secure digital banking and innovative software solutions across India. Focused on
+                  financial inclusion, the company provides rural banking services alongside website development, custom
+                  software, and mobile application solutions.</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Slides 2006----FFFFFF -->
+          <!-- <div class="swiper-slide" data-year="2006">
+            <div class="slide-grid">
+              <div class="col-left animated-element">
+                <h2 class="slide-title">Year 2006 Scale</h2>
+                <p class="slide-text">Securing international certifications for cross-border sample coupplings.</p>
+              </div>
+              <div class="col-center animated-element">
+                <div class="image-wrapper"><img
+                    src="https://images.unsplash.com/photo-1582718569369-67996245ee41?q=80&w=600" alt="2006"></div>
+              </div>
+              <div class="col-right animated-element">
+                <p class="slide-text font-light">Setting world safety benchmarks.</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="swiper-slide" data-year="2007">
+            <div class="slide-grid">
+              <div class="col-left animated-element">
+                <h2 class="slide-title">Year 2007 Vision</h2>
+                <p class="slide-text">Implementation of eco-friendly green fleets.</p>
+              </div>
+              <div class="col-center animated-element">
+                <div class="image-wrapper"><img
+                    src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=600" alt="2007"></div>
+              </div>
+              <div class="col-right animated-element">
+                <p class="slide-text font-light">Lowering overall inner-city footprint metrics.</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="swiper-slide" data-year="2008">
+            <div class="slide-grid">
+              <div class="col-left animated-element">
+                <h2 class="slide-title">Year 2008 Breakthroughs</h2>
+                <p class="slide-text">Reaching record logistics capacity milestones during peak medical seasons.</p>
+              </div>
+              <div class="col-center animated-element">
+                <div class="image-wrapper"><img
+                    src="https://images.unsplash.com/photo-1530026405186-ed1ea0ac7a63?q=80&w=600" alt="2008"></div>
+              </div>
+              <div class="col-right animated-element">
+                <p class="slide-text font-light">Zero delays logged over peak windows.</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="swiper-slide" data-year="2009">
+            <div class="slide-grid">
+              <div class="col-left animated-element">
+                <h2 class="slide-title">Year 2009 Integration</h2>
+                <p class="slide-text">Partnering directly with local government operations centers.</p>
+              </div>
+              <div class="col-center animated-element">
+                <div class="image-wrapper"><img
+                    src="https://images.unsplash.com/photo-1511174511575-2751015e2b5c?q=80&w=600" alt="2009"></div>
+              </div>
+              <div class="col-right animated-element">
+                <p class="slide-text font-light">Optimized emergency dispatch routing.</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="swiper-slide" data-year="2010">
+            <div class="slide-grid">
+              <div class="col-left animated-element">
+                <h2 class="slide-title">Decade Milestone 2010</h2>
+                <p class="slide-text">Refining the entire operational blueprint into an automated framework ecosystem.
+                </p>
+              </div>
+              <div class="col-center animated-element">
+                <div class="image-wrapper"><img
+                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=600" alt="2010"></div>
+              </div>
+              <div class="col-right animated-element">
+                <p class="slide-text font-light">Proudly covering millions of successful shipments.</p>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+
+        <!-- Slider Navigation Controls (Top Right) -->
+        <div class="slider-controls">
+          <button class="nav-btn prev-btn">←</button>
+          <button class="nav-btn next-btn">→</button>
+        </div>
+
+        <!-- Scrollable Horizontal Timeline Axis Component -->
+        <div class="timeline-scroll-axis">
+          <div class="timeline-track-line"></div>
+          <div class="timeline-buttons-wrapper">
+            <!-- Dynamic Buttons injected here via JS -->
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
   <!-- our_brand_section -->
-  <section class="our_brand_section">
+  <section class="our_brand_section" id="company">
     <div class="brand_section">
       <div class="container">
         <div class="row">
@@ -529,9 +693,6 @@
               </div>
               <div class="brand_right_button">
                 <div class="button">
-                  <a href="#">
-                    View All Brands <img class="svg_icon" src="images/Vector.svg" alt="">
-                  </a>
                 </div>
               </div>
             </div>
@@ -539,97 +700,111 @@
         </div>
         <div class="row">
           <div class="main_brand_part">
-            <div class="brand_box">
-              <img src="images/images-33.jpg" alt="">
-              <h4>Privin Projects Pvt. Ltd</h4>
+
+            <div class="brand_box RHMB">
+              <img src="images/img.avif" alt="">
+              <h4>RHMB Private Limited </h4>
               <div class="brand_content">
-                <h3>Privin Projects Pvt. Ltd</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, animi.</p>
+                <h3>RHMB Private Limited </h3>
+                <p>RHMB Private Limited specializes in industrial metals and baby wear trading.</p>
                 <div class="brand_button">
                   <a href="#" class="read-more-btn">
                     <span class="btn-text">
                       Read More
                     </span>
-                    <span class="btn-icon">
-                      <img src="images/white_arrow.svg" alt="">
-                    </span>
+                    <!-- <span class="btn-icon">
+                      <img src="images/Vector.svg" alt="">
+                    </span> -->
                   </a>
                 </div>
               </div>
             </div>
-            <div class="brand_box">
-              <img src="images/images-11.jpg" alt="">
-              <h4>Privin Projects Pvt. Ltd</h4>
+            <div class="brand_box jayash">
+              <img src="images/jayash.webp" alt="">
+              <h4>Jayesh Logistics Ltd</h4>
               <div class="brand_content">
-                <h3>Privin Projects Pvt. Ltd</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, animi.</p>
+                <h3>Jayesh Logistics Ltd</h3>
+                <p>A trusted logistics partner providing efficient transportation and supply chain solutions across
+                  India.</p>
                 <div class="brand_button">
-                  <a href="#" class="read-more-btn">
+                  <a href="https://jayeshlogistics.com/
+" class="read-more-btn">
                     <span class="btn-text">
                       Read More
                     </span>
-                    <span class="btn-icon">
+                    <!-- <span class="btn-icon">
                       <img src="images/white_arrow.svg" alt="">
-                    </span>
+                    </span> -->
                   </a>
                 </div>
               </div>
             </div>
-            <div class="brand_box">
-              <img src="images/h3_bg-1.jpg" alt="">
-              <h4>Privin Projects Pvt. Ltd</h4>
+
+            <div class="brand_box Glocal">
+              <img src="images/glocal.webp" alt="">
+              <h4> Glocal Farms Private Limited</h4>
               <div class="brand_content">
-                <h3>Privin Projects Pvt. Ltd</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, animi.</p>
+                <h3> Glocal Farms Private Limited</h3>
+                <p>Glocal Farms Private Limited delivers infrastructure development and agricultural solutions across
+                  West Bengal.</p>
                 <div class="brand_button">
-                  <a href="#" class="read-more-btn">
+                  <a href="https://www.glocalfarms.com/					
+					
+" class="read-more-btn">
                     <span class="btn-text">
                       Read More
                     </span>
-                    <span class="btn-icon">
+                    <!-- <span class="btn-icon">
                       <img src="images/white_arrow.svg" alt="">
-                    </span>
+                    </span> -->
                   </a>
                 </div>
               </div>
             </div>
-            <div class="brand_box">
-              <img src="images/blog6.jpg" alt="">
+
+            <div class="brand_box Privin">
+              <img src="images/GoldenBeachHome_SiteVisitDesigner.jpg" alt="">
               <h4>Privin Projects Pvt. Ltd</h4>
               <div class="brand_content">
                 <h3>Privin Projects Pvt. Ltd</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, animi.</p>
+                <p>Privin Projects Private Limited delivers civil construction and interior design solutions for modern
+                  infrastructure projects.</p>
                 <div class="brand_button">
-                  <a href="#" class="read-more-btn">
+                  <a href="#					
+" class="read-more-btn">
                     <span class="btn-text">
                       Read More
                     </span>
-                    <span class="btn-icon">
+                    <!-- <span class="btn-icon">
                       <img src="images/white_arrow.svg" alt="">
-                    </span>
+                    </span> -->
                   </a>
                 </div>
               </div>
             </div>
-            <div class="brand_box">
-              <img src="images/footer-bg.jpg" alt="">
-              <h4>Privin Projects Pvt. Ltd</h4>
+
+            <div class="brand_box nine-pay">
+              <img src="images/pay.jpg" alt="">
+              <h4>Ninetech Digital Services Pvt.Ltd </h4>
               <div class="brand_content">
-                <h3>Privin Projects Pvt. Ltd</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, animi.</p>
+                <h3>Ninetech Digital Services Private Limited </h3>
+                <p>Ninetech Digital Services Private Limited delivers fintech (Rural banking services) and digital
+                  technology solutions across India.</p>
                 <div class="brand_button">
-                  <a href="#" class="read-more-btn">
+                  <a href="https://ninepay.in/					
+" class="read-more-btn">
                     <span class="btn-text">
                       Read More
                     </span>
-                    <span class="btn-icon">
-                      <img src="images/white_arrow.svg" alt="">
+                    <!-- <span class="btn-icon">
+                      <img src="images/white_arrow.svg" alt=""> -->
                     </span>
                   </a>
                 </div>
               </div>
             </div>
-            <div class="brand_box">
+
+            <!-- <div class="brand_box">
               <img src="images/istockphoto-1705486868-612x612.jpg" alt="">
               <h4>Privin Projects Pvt. Ltd</h4>
               <div class="brand_content">
@@ -682,7 +857,8 @@
                   </a>
                 </div>
               </div>
-            </div>
+            </div> -->
+
           </div>
         </div>
       </div>
@@ -697,12 +873,14 @@
           <div class="col-md-7">
             <div class="left_congtent_part">
               <h2>Prayatna Foundation is the designated Social Initiative Partner of the Auctus Group.</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of </p>
-              <a href="#" class="read-more-btn">
+              <p>Prayatna grew out of a vision of minimizing social injustice towards women and children and empowering
+                them with adequate education and training. The organization is at its nascent stage and aims at
+                bettering the lives of the needful around. It believes in the global movement for <span>Shiksha, Shakti,
+                  and Swasthya.</span> </p>
+              <p>Together we aim at creating a difference in the lives of all those who deserve it. We believe in the
+                fact that <span>"The secret of a change is to focus all of your energy not on fighting the old, but on
+                  building the new."</span></p>
+              <a href="https://www.prayatnafoundation.in/" class="read-more-btn">
                 <span class="btn-text">
                   Our Foundation
                 </span>
@@ -717,50 +895,52 @@
               <div class="left_marque">
                 <div class="marquee">
                   <div class="marquee-content">
-                    <img src="images/p-1.jpeg" alt="Image 1">
-                    <img src="images/p-2.avif" alt="Image 2">
-                    <img src="images/p-3.jpeg" alt="Image 3">
-                    <img src="images/p-4.avif" alt="Image 4">
-                    <img src="images/p-5.webp" alt="Image 5">
-                    <img src="images/p-6.webp" alt="Image 1">
-                    <img src="images/p-7.jpg" alt="Image 2">
-                    <img src="images/p-8.jpeg" alt="Image 3">
-                    <img src="images/p-9.png" alt="Image 4">
-                    <img src="images/p-10.jpg" alt="Image 5">
-                    <img src="images/p-11.jpg" alt="Image 1">
-                    <img src="images/p-12.jpeg" alt="Image 2">
-                    <img src="images/p-13.avif" alt="Image 3">
-                    <img src="images/p-4.avif" alt="Image 5">
-                    <img src="images/p-3.jpeg" alt="Image 1">
-                    <img src="images/p-7.jpg" alt="Image 2">
-                    <img src="images/p-1.jpeg" alt="Image 3">
-                    <img src="images/p-6.webp" alt="Image 4">
-                    <img src="images/p-10.avif" alt="Image 5">
+                    <img src="images/f-1.jpeg" alt="Image 1">
+                    <img src="images/f-2.jpeg" alt="Image 2">
+                    <img src="images/f-3.jpeg" alt="Image 3">
+                    <img src="images/f-4.jpeg" alt="Image 4">
+                    <img src="images/f-5.jpeg" alt="Image 5">
+                    <img src="images/f-6.jpeg" alt="Image 6">
+                    <img src="images/f-7.jpeg" alt="Image 7">
+                    <img src="images/f-8.jpeg" alt="Image 8">
+                    <img src="images/f-9.jpeg" alt="Image 9">
+                    <img src="images/f-10.jpeg" alt="Image 10">
+                    <img src="images/f-11.jpeg" alt="Image 11">
+                    <img src="images/f-12.jpeg" alt="Image 12">
+                    <img src="images/f-13.jpeg" alt="Image 13">
+                    <img src="images/f-14.jpeg" alt="Image 14">
+                    <img src="images/f-15.jpeg" alt="Image 15">
+                    <img src="images/f-16.jpeg" alt="Image 16">
+                    <img src="images/f-17.jpeg" alt="Image 17">
+                    <img src="images/f-18.jpeg" alt="Image 18">
+                    <img src="images/f-19.jpeg" alt="Image 19">
+                    <img src="images/f-20.jpeg" alt="Image 20">
                   </div>
                 </div>
               </div>
               <div class="right_marque">
                 <div class="marquee_right">
                   <div class="marquee-content">
-                    <img src="images/p-1.jpeg" alt="Image 1">
-                    <img src="images/p-2.avif" alt="Image 2">
-                    <img src="images/p-3.jpeg" alt="Image 3">
-                    <img src="images/p-4.avif" alt="Image 4">
-                    <img src="images/p-5.webp" alt="Image 5">
-                    <img src="images/p-6.webp" alt="Image 1">
-                    <img src="images/p-7.jpg" alt="Image 2">
-                    <img src="images/p-8.jpeg" alt="Image 3">
-                    <img src="images/p-9.png" alt="Image 4">
-                    <img src="images/p-10.jpg" alt="Image 5">
-                    <img src="images/p-11.jpg" alt="Image 1">
-                    <img src="images/p-12.jpeg" alt="Image 2">
-                    <img src="images/p-13.avif" alt="Image 3">
-                    <img src="images/p-4.avif" alt="Image 5">
-                    <img src="images/p-3.jpeg" alt="Image 1">
-                    <img src="images/p-7.jpg" alt="Image 2">
-                    <img src="images/p-1.jpeg" alt="Image 3">
-                    <img src="images/p-6.webp" alt="Image 4">
-                    <img src="images/p-10.avif" alt="Image 5">
+                    <img src="images/f-1.jpeg" alt="Image 1">
+                    <img src="images/f-38.jpeg" alt="Image 2">
+                    <img src="images/f-37.jpeg" alt="Image 3">
+                    <img src="images/f-36.jpeg" alt="Image 4">
+                    <img src="images/f-35.jpeg" alt="Image 5">
+                    <img src="images/f-34.jpeg" alt="Image 6">
+                    <img src="images/f-33.jpeg" alt="Image 7">
+                    <img src="images/f-32.jpeg" alt="Image 8">
+                    <img src="images/f-31.jpeg" alt="Image 9">
+                    <img src="images/f-30.jpeg" alt="Image 10">
+                    <img src="images/f-29.jpeg" alt="Image 11">
+                    <img src="images/f-28.jpeg" alt="Image 12">
+                    <img src="images/f-27.jpeg" alt="Image 13">
+                    <img src="images/f-26.jpeg" alt="Image 14">
+                    <img src="images/f-25.jpeg" alt="Image 15">
+                    <img src="images/f-24.jpeg" alt="Image 16">
+                    <img src="images/f-23.jpeg" alt="Image 17">
+                    <img src="images/f-22.jpeg" alt="Image 18">
+                    <img src="images/f-21.jpeg" alt="Image 19">
+                    <img src="images/f-6.jpeg" alt="Image 20">
                   </div>
                 </div>
               </div>
@@ -771,31 +951,363 @@
     </div>
   </section>
 
-<!-- care_section -->
- <section class="care_section">
-<div class="">
-    <img src="images/background_img.png" class="care_bg" alt="">
-</div>
- <div class="care_part">
-<div class="container">
-  <div class="row">
-    <div class="col-md-5">
-      <div class="care_content_part">
-         <div class="top_sec_part">
-              <h6>
-                <div class="dott"></div>
-                Our Brands
-              </h6>
+  <!-- care_section -->
+  <section class="care_section">
+    <div class="care_part">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="care_content_part">
+              <div class="top_sec_part">
+                <h6>
+                  <div class="dott"></div>
+                  We Care
+                </h6>
+              </div>
+              <h2>Life at Auctus Group </h2>
+              <h4>Why work at Auctus Group ?</h4>
+              <p>Auctus Group comprises an array of global companies ranging from construction to logistics to
+                agriculture to interior design, all with a vision to change the world using technology. We also have a
+                strong sense of social responsibility and want to contribute to the society as much as possible. With an
+                evolved team coming from varied backgrounds, Aucuts Group is moving towards being an undisputed
+                conglomerate disrupting the industry it is in.</p>
+              <div class="care_button">
+                <a href="#founder" class="read-more-btn">
+                  <span class="btn-text">
+                    Meet Our People
+                  </span>
+                  <span class="btn-icon">
+                    <img src="images/Vector.svg" alt="">
+                  </span>
+                </a>
+
+              </div>
             </div>
-            <h2>Life at Auctus Group </h2>
-            <h4>Why work at Auctus Group ?</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis veritatis minus est atque repudiandae explicabo magni, quisquam recusandae, amet blanditiis quo nostrum fugit facilis, laboriosam beatae quaerat excepturi necessitatibus aliquam deleniti et. Reprehenderit, aliquam! Ipsa earum iure, officia quasi velit voluptate voluptas accusantium totam iste tempore sed nesciunt hic qui.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="care_site_part">
+              <!-- <div class="empy_part">
+                <img src="images/users-alt (1) 1.png" />
+                <h3> <span>2,000</span>Employees at the
+                  Auctus Group</h3>
+              </div> -->
+              <div class="cmo_part">
+                <div class="cmo_marquee cmo_top">
+                  <div class="marquee-content">
+                    <div class="ceo_card">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                      <div class="profile">
+                        <h4>Bishnu Kumar Bajaj
+                          <span>FOUNDER & ADVISOR</span>
+                        </h4>
+                        <div class="profile_photo"><img src="images/mithun.jpeg" /></div>
+                      </div>
+                    </div>
+                    <div class="ceo_card">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio doloribus alias.
+                      </p>
+                      <div class="profile">
+                        <h4>Sanjay Kumar Kundaliya
+                          <span> CMD </span>
+                        </h4>
+                        <div class="profile_photo"><img src="images/mithun.jpeg" /></div>
+                      </div>
+                    </div>
+                    <div class="ceo_card">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio doloribus alias.
+                        Labore ducimus omnis </p>
+                      <div class="profile">
+                        <h4>Navita Kundaliya
+                          <span>CEO, Glocal Farms Pvt. Ltd </span>
+                        </h4>
+                        <div class="profile_photo"><img src="images/mithun.jpeg" /></div>
+                      </div>
+                    </div>
+                    <div class="ceo_card">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio doloribus alias.
+                        Labore ducimus p>
+                      <div class="profile">
+                        <h4>Rishi Maheshwari
+                          <span>ED </span>
+                        </h4>
+                        <div class="profile_photo"><img src="images/mithun.jpeg" /></div>
+                      </div>
+                    </div>
+                    <div class="ceo_card">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio doloribus alias.
+                        Labore ducimus omnis doloremque ipsam animi provident dignissimos.</p>
+                      <div class="profile">
+                        <h4>Mithun Chakraborty
+                          <span>CEO </span>
+                        </h4>
+                        <div class="profile_photo"><img src="images/mithun.jpeg" /></div>
+                      </div>
+                    </div>
+                    <div class="ceo_card">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio doloribus alias.
+                        Labore ducimus omnis doloremque ipsam animi provident dignissimos.</p>
+                      <div class="profile">
+                        <h4>Mohasin Dhali
+                          <span>ED </span>
+                        </h4>
+                        <div class="profile_photo"><img src="images/mithun.jpeg" /></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cmo_marquee cmo_bottom">
+                  <div class="marquee-content">
+                    <div class="ceo_card">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio doloribus alias.
+                        Labore ducimus omnis doloremque ipsam animi provident dignissimos.</p>
+                      <div class="profile">
+                        <h4>Rashmi Bajaj
+                          <span>ED </span>
+                        </h4>
+                        <div class="profile_photo"><img src="images/mithun.jpeg" /></div>
+                      </div>
+                    </div>
+                    <div class="ceo_card">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio doloribus alias.
+                        Labore ducimus omnis doloremque ipsam animi provident dignissimos.</p>
+                      <div class="profile">
+                        <h4>Vineeta Sodhani
+                          <span>NED </span>
+                        </h4>
+                        <div class="profile_photo"><img src="images/mithun.jpeg" /></div>
+                      </div>
+                    </div>
+                    <div class="ceo_card">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio doloribus alias.
+                        Labore ducimus omnis doloremque ipsam animi provident dignissimos.</p>
+                      <div class="profile">
+                        <h4>Utkarsh Gutgutia
+                          <span>CA </span>
+                        </h4>
+                        <div class="profile_photo"><img src="images/mithun.jpeg" /></div>
+                      </div>
+                    </div>
+                    <div class="ceo_card">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                      <div class="profile">
+                        <h4>Aloke Jain
+                          <span>CEO </span>
+                        </h4>
+                        <div class="profile_photo"><img src="images/mithun.jpeg" /></div>
+                      </div>
+                    </div>
+                    <div class="ceo_card">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio doloribus alias.
+                        Labore ducimus.</p>
+                      <div class="profile">
+                        <h4>Archana Roy
+                          <span>CEO </span>
+                        </h4>
+                        <div class="profile_photo"><img src="images/mithun.jpeg" /></div>
+                      </div>
+                    </div>
+                    <div class="ceo_card">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                      <div class="profile">
+                        <h4>Akancha Agarwal
+                          <span>CEO </span>
+                        </h4>
+                        <div class="profile_photo"><img src="images/mithun.jpeg" /></div>
+                      </div>
+                    </div>
+                    <div class="ceo_card">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                      <div class="profile">
+                        <h4>Jayshree Jhanwar
+                          <span>CEO </span>
+                        </h4>
+                        <div class="profile_photo"><img src="images/mithun.jpeg" /></div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div> 
-  </div>
- </section>
+  </section>
+
+  <!-- banner_bottom -->
+  <section class="partner_section">
+    <div class="swiper partner_swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-1.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-2.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-4.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-5.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-6.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-7.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-8.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-9.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-10.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-11.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-12.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-13.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-7.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-7.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-7.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-7.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-7.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-7.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-7.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="images_box">
+            <img src="images/c-7.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer_full_section -->
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="logo_footer">
+            <a href="#">
+              <img src="images/white-logo.png" />
+            </a>
+            <p>A diversified business group delivering innovation, reliability, and sustainable growth across multiple
+              industries.</p>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="right_footer" id="contact">
+            <div class="text_footer">
+              <h4>Get In Touch</h4>
+              <a href="#"> +91 80172 70104</a>
+              <a href="#"> info@auctusgroup.in</a>
+            </div>
+            <div class="social_icon">
+              <h4>Social Touch</h4>
+              <div class="social">
+                <div class="facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                    <path
+                      d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l98.2 0 0-145.8-52.8 0 0-78.2 52.8 0 0-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4l0 70.8c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2l0 27.8 83.6 0-14.4 78.2-69.3 0 0 145.8 129 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32z" />
+                  </svg>
+                </div>
+                <div class="inst">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                    <path
+                      d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                  </svg>
+                </div>
+                <div class="whatsapp">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                    <path
+                      d="M92.1 254.6c0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6 49.9-13.1 4.8 2.9c20.2 12 43.4 18.4 67.1 18.4l.1 0c72.6 0 133.3-59.1 133.3-131.8 0-35.2-15.2-68.3-40.1-93.2-25-25-58-38.7-93.2-38.7-72.7 0-131.8 59.1-131.9 131.8zM274.8 330c-12.6 1.9-22.4 .9-47.5-9.9-36.8-15.9-61.8-51.5-66.9-58.7-.4-.6-.7-.9-.8-1.1-2-2.6-16.2-21.5-16.2-41 0-18.4 9-27.9 13.2-32.3 .3-.3 .5-.5 .7-.8 3.6-4 7.9-5 10.6-5 2.6 0 5.3 0 7.6 .1l.8 0c2.3 0 5.2 0 8.1 6.8 1.2 2.9 3 7.3 4.9 11.8 3.3 8 6.7 16.3 7.3 17.6 1 2 1.7 4.3 .3 6.9-3.4 6.8-6.9 10.4-9.3 13-3.1 3.2-4.5 4.7-2.3 8.6 15.3 26.3 30.6 35.4 53.9 47.1 4 2 6.3 1.7 8.6-1 2.3-2.6 9.9-11.6 12.5-15.5 2.6-4 5.3-3.3 8.9-2s23.1 10.9 27.1 12.9c.8 .4 1.5 .7 2.1 1 2.8 1.4 4.7 2.3 5.5 3.6 .9 1.9 .9 9.9-2.4 19.1-3.3 9.3-19.1 17.7-26.7 18.8zM448 96c0-35.3-28.7-64-64-64L64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320zM148.1 393.9L64 416 86.5 333.8c-13.9-24-21.2-51.3-21.2-79.3 .1-87.4 71.2-158.5 158.6-158.5 42.4 0 82.2 16.5 112.2 46.5 29.9 30 47.9 69.8 47.9 112.2 0 87.4-72.7 158.5-160.1 158.5-26.6 0-52.7-6.7-75.8-19.3z" />
+                  </svg>
+                </div>
+                <div class="twitter">
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--!Font Awesome Free v7.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                    <path
+                      d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM351.3 199.3c0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3 .6 10.4 .8 15.8 .8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4l0-.8c8.7 4.9 18.9 7.9 29.6 8.3-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34 .2 2.8 .2 5.7 .2 8.5z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -806,11 +1318,15 @@
 
   <!-- swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
   <!-- 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
   <script>
-
     window.addEventListener("scroll", function () {
 
       const header = document.getElementById("mainHeader");
@@ -828,7 +1344,8 @@
   </script>
 
   <script>
-    const swiper = new Swiper(".swiper", {
+    // Main banner Swiper (avoid affecting other Swipers like the story section)
+    new Swiper(".bannerSwiper", {
       speed: 10000,
       direction: "horizontal",
       loop: true,
@@ -855,28 +1372,22 @@
         }
       }
     });
-
   </script>
+
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-
       const swiper = new Swiper(".partner_swiper", {
 
         slidesPerView: "auto",
         spaceBetween: 30,
-
         loop: true,
-
-
         speed: 10000,
-
         freeMode: true,
         freeModeMomentum: false,
 
         grabCursor: false,
         allowTouchMove: false,
-
         allowTouchMove: false,
 
         autoplay: {
@@ -909,7 +1420,6 @@
 
     });
   </script>
-
 
   <script>
 
@@ -948,7 +1458,6 @@
         if (current < target) {
 
           counter.innerText = `${Math.ceil(current + increment)}`;
-
           setTimeout(updateCounter, 25);
 
         } else {
@@ -988,14 +1497,77 @@
     });
   </script>
 
-<!-- marquee -->
+  <!-- marquee -->
 
-<script>
-  document.querySelectorAll('.marquee-content').forEach(item => {
-    item.innerHTML += item.innerHTML;
+  <script>
+    document.querySelectorAll('.marquee-content').forEach(item => {
+      item.innerHTML += item.innerHTML;
+    });
+  </script>
+
+
+<!-- new header js` -->
+ <script>
+  const toggler = document.querySelector(".navbar-toggler");
+const menu = document.getElementById("navbarSupportedContent");
+
+// Change icon
+menu.addEventListener("shown.bs.collapse", () => {
+    toggler.classList.add("open");
 });
-</script>
 
+menu.addEventListener("hidden.bs.collapse", () => {
+    toggler.classList.remove("open");
+});
+
+// Auto close when clicking a nav link
+document.querySelectorAll(".nav-link").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        const bsCollapse = bootstrap.Collapse.getInstance(menu);
+
+        if(bsCollapse){
+            bsCollapse.hide();
+        }
+
+    });
+
+});
+ </script>
+
+ <!-- client -->
+
+ <script>
+const partnerSwiper = new Swiper(".partner_swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: true,
+    freeMode: true,
+    grabCursor: false,
+
+    speed: 5000, 
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: false,
+    },
+
+    allowTouchMove: false,
+
+    breakpoints: {
+        0: {
+            spaceBetween: 15
+        },
+        768: {
+            spaceBetween: 20
+        },
+        1200: {
+            spaceBetween: 30
+        }
+    }
+});
+ </script>
 
 </body>
 
